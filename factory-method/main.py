@@ -1,3 +1,6 @@
+"""
+ref: https://refactoring.guru/design-patterns/factory-method
+"""
 import dialog
 
 if __name__=='__main__':
