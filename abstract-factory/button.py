@@ -1,5 +1,6 @@
 import abc
 
+
 class IButton(metaclass=abc.ABCMeta):
     @classmethod
     def __subclasshook__(cls, subclass):
@@ -10,9 +11,11 @@ class IButton(metaclass=abc.ABCMeta):
     def paint(self):
         raise NotImplementedError
 
+
 class WinButton(IButton):
     def paint(self):
         print("paint button on Win OS")
+
 
 class MacButton(IButton):
     def paint(self):

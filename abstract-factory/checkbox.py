@@ -1,5 +1,6 @@
 import abc
 
+
 class ICheckbox(metaclass=abc.ABCMeta):
     @classmethod
     def __subclasshook__(cls, subclass):
@@ -10,9 +11,11 @@ class ICheckbox(metaclass=abc.ABCMeta):
     def paint(self):
         raise NotImplementedError
 
+
 class WinCheckbox(ICheckbox):
     def paint(self):
         print("paint checkbox on Win OS")
+
 
 class MacCheckbox(ICheckbox):
     def paint(self):
