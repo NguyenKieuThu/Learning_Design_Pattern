@@ -1,5 +1,4 @@
 import abc
-from copy import deepcopy
 
 
 class Shape(abc.ABC):
